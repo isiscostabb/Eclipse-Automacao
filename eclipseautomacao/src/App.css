@@ -1,0 +1,29 @@
+
+main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100%;
+}
+
+.conteudo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: var(--cor3);
+}
+
+.h1Empresa{
+    margin: 40px 0px 20px 0px;
+}
+
+.h1Trabalhos{
+    margin: 150px 0px 20px 0px;
+}
+
+.h1Diferenciais{
+    margin: 150px 0px 20px 0px;
+}

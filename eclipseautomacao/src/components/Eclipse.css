@@ -1,0 +1,31 @@
+
+.animacaoEclipse {
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    width: 100%;
+    height: 100vh;
+    background-image: url("/sky.png");
+    background-repeat: no-repeat;
+}
+
+.textoIncial {
+    position: absolute;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 20%;
+}
+
+.titulo {
+    font-size: 70px;
+    color: var(--cor5);
+    padding-top: 10px;
+}
+
+.subtitulo {
+    font-size: 30px;
+}

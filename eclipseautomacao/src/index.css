@@ -1,0 +1,92 @@
+
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+:root {
+  --cor1: #ffffff;; /* branco */
+  --cor2: #4c6def; /* azul */
+  --cor3: #050428; /* azul escuro */
+  --cor4: #181818; /* preto */
+  --cor5: #ff5400; /* laranja */
+  --cor6: #983504; /* laranja escuro */
+}
+
+@font-face {
+  font-family: 'font0';
+  src: url(assets/Fontes/BDSupperRegular.ttf);
+}
+
+@font-face {
+  font-family: 'font1';
+  src: url(assets/Fontes/BDSupperBold.ttf);
+} 
+
+:root {
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: 'font0';
+  color: var(--cor5);
+  font-size: 50px;
+}
+
+h2{
+  font-family: 'font0';
+}
+
+p{
+  font-family: 'font0';
+}
+
+
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+  background-color: var(--cor5);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
