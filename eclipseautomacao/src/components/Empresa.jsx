@@ -34,7 +34,7 @@ function Empresa() {
                             </p>
                         </div>
 
-                        <div className='slide'>
+                        <div className='slide tres'>
                             <p className='pEmpresa'>
                                 A Eclipse Automação fornece <span className='destaque'>solução completa para sua necessidade de automação</span>, desde o projeto elétrico, montagem de painel, elaboração 
                                 de software de automação, enfim, até o produto final. Também <span className='destaque'>terceiriza o desenvolvimento de projetos e softwares</span> para sua empresa,
@@ -42,7 +42,7 @@ function Empresa() {
                             </p>
                         </div>
 
-                        <div className='slide'>
+                        <div className='slide quatro'>
                             <p className='pEmpresa'>
                                 Nossa experiencia em máquinas simples até as mais complexas, como equipamentos rápidos e uso de tecnologias com alto poder de processamento
                                 e rapidez, nos habilita a ser <span className='destaque'>seu parceiro ideal</span> no projeto e execução de sistemas de automação nas mais diversas áreas, permitindo assim, 
