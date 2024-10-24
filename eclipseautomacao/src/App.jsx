@@ -5,6 +5,7 @@ import Eclipse from './components/Eclipse';
 import Empresa from './components/Empresa';
 import Trabalhos from './components/Trabalhos';
 import Diferenciais from './components/Diferenciais';
+import Valores from './components/Valores';
 
 import './App.css';
 
@@ -38,9 +39,10 @@ function App() {
           <h1 ref={diferenciaisRef} className='h1Diferenciais'>DIFERENCIAIS</h1>
           <Diferenciais />
 
-          {/*<h1 ref={valoresRef} className='h1Valores'>VALORES</h1>
+          <h1 ref={valoresRef} className='h1Valores'>VALORES</h1>
+          <Valores />
 
-          <h1 ref={contatoRef} className='h1Contato'>CONTATO</h1>*/}
+          <h1 ref={contatoRef} className='h1Contato'>CONTATO</h1>
 
         </section>
       </main>

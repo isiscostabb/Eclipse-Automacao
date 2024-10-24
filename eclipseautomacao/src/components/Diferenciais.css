@@ -15,15 +15,19 @@
     justify-content: start;
     align-items: center;
     cursor: pointer;
-    padding-top: 65px;
+    padding-top: 40px;
     width: 15%;
     height: 180px;
     border-radius: 20px;
     background-color: var(--cor5);
     margin-bottom: 20px;
     transition: 1s;
+}
 
-    margin-bottom: 200px;
+.titleDiferenciais{
+    font-size: 20px;
+    margin-top: 20px;
+    opacity: 1;
 }
 
 .pDiferenciais{
@@ -40,4 +44,14 @@
     margin-bottom: 50px;
     opacity: 1;
     transition-delay: .2s;
+}
+
+.conteinerDiferenciais:hover .titleDiferenciais{
+    transition: opacity .5s ease, visibility .5s ease;
+    opacity: 0;
+    display: none;
+}
+
+.conteinerDiferenciais:hover{
+    background-color: var(--cor6);
 }
