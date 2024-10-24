@@ -2,30 +2,42 @@
 .diferenciais {
     position: relative;
     display: flex;
-    align-items: center;
     width: 80vw;
     margin-top: 20px;
     justify-content: space-around;
-    align-items: center;
+    align-items: start;
 }
 
 .conteinerDiferenciais{
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 25%;
-    height: 300px;
-    border-radius: 20px;
+    justify-content: start;
     align-items: center;
+    cursor: pointer;
+    padding-top: 65px;
+    width: 15%;
+    height: 180px;
+    border-radius: 20px;
     background-color: var(--cor5);
     margin-bottom: 20px;
-    cursor: pointer;
-    justify-content: center;
-    align-items: center;
+    transition: 1s;
+
+    margin-bottom: 200px;
 }
 
 .pDiferenciais{
     text-align: center;
-    margin-top: 15px;
+    font-size: 0px;
     width: 90%;
+    transition: opacity .5s ease, visibility .5s ease;
+    opacity: 0;
+}
+
+.conteinerDiferenciais:hover .pDiferenciais{
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    opacity: 1;
+    transition-delay: .2s;
 }

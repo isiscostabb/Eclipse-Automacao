@@ -27,9 +27,7 @@ function Diferenciais() {
             <BiSolidFactory size={100}/>
             <p className='pDiferenciais'>Promover e elevar a competividade dos nossos clientes</p>
         </div>
-      </div>
-
-      <div className="diferenciais">
+        
         <div className="conteinerDiferenciais">
             <FaHandsHelping size={100}/>
             <p className='pDiferenciais'>Comprometimento social e humano, priorizando o respeito mútuo e a ética</p>
@@ -40,7 +38,6 @@ function Diferenciais() {
             <p className='pDiferenciais'>Proporcionar um ambiente agradável de relações e trabalho</p>
         </div>
 
-        <div className="conteinerDiferenciais"></div>
       </div>
 
     </>
