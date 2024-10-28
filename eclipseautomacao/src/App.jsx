@@ -5,7 +5,7 @@ import Eclipse from './components/Eclipse';
 import Empresa from './components/Empresa';
 import Trabalhos from './components/Trabalhos';
 import Diferenciais from './components/Diferenciais';
-import Valores from './components/Valores';
+import Contato from './components/Contato';
 
 import './App.css';
 
@@ -13,7 +13,6 @@ function App() {
   const empresaRef = useRef(null);
   const trabalhosRef = useRef(null);
   const diferenciaisRef = useRef(null);
-  const valoresRef = useRef(null);
   const contatoRef = useRef(null);
 
   return (
@@ -23,7 +22,6 @@ function App() {
           scrollToEmpresa={() => empresaRef.current.scrollIntoView({ behavior: 'smooth' })}
           scrollToTrabalhos={() => trabalhosRef.current.scrollIntoView({ behavior: 'smooth' })}
           scrollToDiferenciais={() => diferenciaisRef.current.scrollIntoView({ behavior: 'smooth' })}
-          scrollToValores={() => valoresRef.current.scrollIntoView({ behavior: 'smooth' })}
           scrollToContato={() => contatoRef.current.scrollIntoView({ behavior: 'smooth' })}
         />
 
@@ -39,10 +37,8 @@ function App() {
           <h1 ref={diferenciaisRef} className='h1Diferenciais'>DIFERENCIAIS</h1>
           <Diferenciais />
 
-          <h1 ref={valoresRef} className='h1Valores'>VALORES</h1>
-          <Valores />
-
-          <h1 ref={contatoRef} className='h1Contato'>CONTATO</h1>
+          {/*<h1 ref={contatoRef} className='h1Contato'>CONTATO</h1>*/}
+          <Contato />
 
         </section>
       </main>

@@ -5,8 +5,7 @@ import './Header.css';
 function Header({ 
   scrollToEmpresa, 
   scrollToTrabalhos, 
-  scrollToDiferenciais, 
-  scrollToValores, 
+  scrollToDiferenciais,
   scrollToContato,
 }) {
 
@@ -34,7 +33,6 @@ function Header({
           <li onClick={scrollToEmpresa}>EMPRESA</li> {/* Chama a função de rolagem */}
           <li onClick={scrollToTrabalhos}>TRABALHOS</li>
           <li onClick={scrollToDiferenciais}>DIFERENCIAIS</li>
-          <li onClick={scrollToValores}>VALORES</li>
           <li onClick={scrollToContato}>CONTATO</li>
         </ul>
       </header>
