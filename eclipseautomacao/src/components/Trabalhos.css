@@ -1,3 +1,4 @@
+
 .trabalhos {
     position: relative;
     display: flex;
@@ -79,35 +80,43 @@
 
 
 .absolute{
-    position: absolute;
     display: flex;
-    width: 85vw;
-    height: 85vh;
-    background-color: var(--cor6);
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor3);
     border-radius: 20px;
-    justify-content: end;
+    justify-content: start;
     margin-top: 100px;
-
+    align-items: center;
     position: fixed;
     top: 43%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 3;
+    overflow-y: scroll;
+    padding: 20px;
 }
 
 .fechar{
-    position: relative;
+    position: fixed;
     display: flex;
-    align-self: flex-start;
+    align-self: flex-end;
     width: 50px;
     height: 50px;
     border-radius: 20px;
     background-color: var(--cor5);
     cursor: pointer;
     margin: 10px 10px 0px 0px;
+    z-index: 4;
 }
 
 
 .fechado{
     display: none;
+}
+
+
+.ts{
+    width: 50%;
 }

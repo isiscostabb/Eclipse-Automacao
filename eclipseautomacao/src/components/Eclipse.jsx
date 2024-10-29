@@ -53,7 +53,7 @@ function Eclipse() {
       const scrollY = window.scrollY; // Posição atual do scroll
 
       // "Trava" apoós o scroll de 700px
-      if (scrollY > 700 && !hasScrolled) {
+      if (scrollY > 850 && !hasScrolled) {
         setHasScrolled(true);
       }
 

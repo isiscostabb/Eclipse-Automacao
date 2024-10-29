@@ -1,3 +1,5 @@
+
+import { IoCloseSharp } from "react-icons/io5";
 import React, { useState } from 'react';
 import './Trabalhos.css';
 
@@ -26,7 +28,7 @@ function Trabalhos() {
             <div className='conteinerTrabalhos'>
 
                 <div className='conteinerVideo'>
-                    <video src="/20190424_125901.mp4" autoPlay loop muted preload='auto' className='video'></video>
+                    <video src="/video trailer.mp4" autoPlay loop muted preload='auto' className='video'></video>
                 </div>
 
                 <div className='conteinerOpcoes'>
@@ -42,14 +44,26 @@ function Trabalhos() {
                                 onMouseOver={e => e.currentTarget.style.backgroundImage = `url(${opcao.imgHover})`}
                                 onMouseOut={e => e.currentTarget.style.backgroundImage = `url(${opcao.imgDefault})`}
                             ></div>
-                            
+
                             <h2 className='txtOpcao'>{opcao.nome}</h2>
                         </div>
                     ))}
                 </div>
                     
                 <div className={`absolute ${isAbsoluteVisible ? '' : 'fechado'}`}>
-                    <div className='fechar' onClick={handleCloseClick}></div>
+                    <div className='fechar' onClick={handleCloseClick}>
+                        <IoCloseSharp size={50} color="#050428"/>
+                    </div>
+                    <br />
+                    <h1>TRABALHOS CEUSA</h1>
+                    <br />
+                    <br />
+                    <img src="/c1.jpg" alt=""  className='ts'/>
+                    <br />
+                    <img src="/c2.jpg" alt=""  className='ts'/>
+                    <br />
+                    <img src="/c3.jpg" alt=""  className='ts'/>
+
                 </div>
 
             </div>
