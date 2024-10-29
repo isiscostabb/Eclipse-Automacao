@@ -1,4 +1,3 @@
-
 import React, { useRef } from 'react';
 import Header from './components/Header';
 import Eclipse from './components/Eclipse';
@@ -15,14 +14,22 @@ function App() {
   const diferenciaisRef = useRef(null);
   const contatoRef = useRef(null);
 
+  const scrollToRef = (ref) => {
+    const element = ref.current;
+    if (element) {
+      const y = element.getBoundingClientRect().top + window.scrollY  - 150; // scroll 150px acima
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+  };
+
   return (
     <>
       <main>
         <Header
-          scrollToEmpresa={() => empresaRef.current.scrollIntoView({ behavior: 'smooth' })}
-          scrollToTrabalhos={() => trabalhosRef.current.scrollIntoView({ behavior: 'smooth' })}
-          scrollToDiferenciais={() => diferenciaisRef.current.scrollIntoView({ behavior: 'smooth' })}
-          scrollToContato={() => contatoRef.current.scrollIntoView({ behavior: 'smooth' })}
+          scrollToEmpresa={() => scrollToRef(empresaRef)}
+          scrollToTrabalhos={() => scrollToRef(trabalhosRef)}
+          scrollToDiferenciais={() => scrollToRef(diferenciaisRef)}
+          scrollToContato={() => scrollToRef(contatoRef)}
         />
 
         <Eclipse />

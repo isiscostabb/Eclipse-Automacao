@@ -8,17 +8,17 @@ import './Contato.css';
 const Contato = React.forwardRef((props, ref) => {
   
   const telefone = '48999840062';
-  const mensagem = 'Olá, tenho interesse em fazer um orçamento para um serviço com a Eclipse Automação';
+  const msgWpp = 'Olá, tenho interesse em fazer um orçamento para um serviço com a Eclipse Automação';
   const email = 'eclipseautomacao@hotmail.com';
-  const assuntoEmail = 'Olá, tenho interesse em fazer um orçamento para um serviço com a Eclipse Automação';
+  const msgEmail = 'Olá, tenho interesse em fazer um orçamento para um serviço com a Eclipse Automação';
 
   const abrirWhatsapp = () => {
-    const url = `https://wa.me/${telefone}?text=${encodeURIComponent(mensagem)}`;
+    const url = `https://wa.me/${telefone}?text=${encodeURIComponent(msgWpp)}`;
     window.open(url, '_blank');
   };
 
   const abrirEmail = () => {
-    const url = `mailto:${email}?subject=${encodeURIComponent(assuntoEmail)}&body=${encodeURIComponent(mensagem)}`;
+    const url = `mailto:${email}?subject=${encodeURIComponent(msgEmail)}&body=${encodeURIComponent(msgWpp)}`;
     window.open(url, '_blank');
   };
 
