@@ -37,8 +37,7 @@ function App() {
           <h1 ref={diferenciaisRef} className='h1Diferenciais'>DIFERENCIAIS</h1>
           <Diferenciais />
 
-          {/*<h1 ref={contatoRef} className='h1Contato'>CONTATO</h1>*/}
-          <Contato />
+          <Contato ref={contatoRef}/>
 
         </section>
       </main>

@@ -33,14 +33,8 @@
     align-items: center;
 }
 
-.slide.tres{
-    background-image: url(/public/empresaSlide3.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
 .slide.quatro{
-    background-image: url(/public/empresaSlide4.png);
+    background-image: url(/public/empresaSlide3.png);
     background-size: 100%;
     background-repeat: no-repeat;
 }
