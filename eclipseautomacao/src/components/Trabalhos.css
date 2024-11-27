@@ -107,16 +107,17 @@
     border-radius: 20px;
     background-color: var(--cor5);
     cursor: pointer;
-    margin: 10px 10px 0px 0px;
     z-index: 4;
 }
-
 
 .fechado{
     display: none;
 }
 
-
 .ts{
-    width: 50%;
+    position: relative;
+    display: flex;
+    width: 30%;
+    margin: 20px;
+    justify-self: center;
 }
