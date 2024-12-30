@@ -56,6 +56,13 @@
     background-position: center;
 }
 
+@media (max-width: 768px) {
+    .slide.quatro {
+        background-image: none;
+    }
+}
+
+
 .imgEmpresa{
     position: relative;
     display: flex;
