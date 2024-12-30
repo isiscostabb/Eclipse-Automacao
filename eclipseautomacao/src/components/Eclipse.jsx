@@ -1,11 +1,11 @@
 
 import './Eclipse.css';
 import React, { useRef, useState, useEffect, Suspense } from 'react';
-import { Canvas, useFrame } from '@react-three/fiber';
-import { OrbitControls, useGLTF } from '@react-three/drei';
+//import { Canvas, useFrame } from '@react-three/fiber';
+//import { OrbitControls, useGLTF } from '@react-three/drei';
 
 // Função para carregar o modelo 3D do Sol
-function SunModel({ position, setsunTargetPosition }) {
+function Eclipse(/*{ position, setsunTargetPosition }*/) {
   /*const { scene } = useGLTF('./public/sun_model.glb');
   const ref = useRef();
   const speed = 0.09; // Velocidade
@@ -74,7 +74,7 @@ function Eclipse() {
       // Remove o evento de scroll ao desmontar o componente
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [hasScrolled]); */
+  }, [hasScrolled]);*/
 
   return (
     <div className='animacaoEclipse'>
@@ -82,7 +82,7 @@ function Eclipse() {
         <h1 className='titulo'>ECLIPSE AUTOMAÇÃO</h1>
         <h2 className='subtitulo'>SOLUÇÕES DE AUTOMAÇÃO INDUSTRIAL</h2>
       </div>
-     {/*<Canvas camera={{ position: [0.4, -0.12, 2], fov: 50 }} frameloop={hasScrolled ? "demand" : "always"}>
+      {/*<Canvas camera={{ position: [0.4, -0.12, 2], fov: 50 }} frameloop={hasScrolled ? "demand" : "always"}>
         <Suspense fallback={null}>
           <ambientLight />
           <SunModel position={sunPosition} setsunTargetPosition={sunTargetPosition} />
