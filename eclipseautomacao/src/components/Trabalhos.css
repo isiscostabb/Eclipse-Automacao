@@ -46,6 +46,12 @@
     justify-items: center;
 }
 
+@media (max-width: 768px) {
+    .conteinerOpcoes {
+        grid-template-columns: 1fr; 
+    }
+}
+
 .opcao {
     position: relative;
     display: flex;
