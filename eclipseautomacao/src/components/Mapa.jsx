@@ -31,7 +31,7 @@ function Mapa() {
       <>
         {/* Mapa com a localização */}
         <div className='mapa'>
-          <MapContainer center={position} zoom={15} style={{ height: '400px', width: '100%' }}>
+          <MapContainer center={position} zoom={15} className='map'>
             <TileLayer
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
               attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

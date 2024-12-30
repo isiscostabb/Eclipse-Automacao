@@ -9,6 +9,13 @@ header {
     overflow-y: hidden;
     z-index: 3;
     transition: .4s;
+    overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+    .header {
+        justify-content: center; 
+    }
 }
 
 .header.scroll {
@@ -23,19 +30,24 @@ header {
     cursor: pointer;
 }
 
+@media (max-width: 768px) {
+    .logo {
+        display: none; 
+    }
+}
+
 ul {
     position: relative;
     display: flex;
-    margin-right: 30px;
+    gap: 20px;
 }
 
 li {
     position: relative;
     cursor: pointer;    
-    margin-right: 20px;
     list-style: none;
     color: var(--cor5);
-    font-size: 20px;
+    font-size: 2vh;
     font-family: 'font0';
 }
 

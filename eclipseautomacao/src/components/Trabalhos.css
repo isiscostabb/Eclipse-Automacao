@@ -29,6 +29,13 @@
     align-content: center;
 }
 
+@media (max-width: 768px) {
+    .conteinerVideo {
+        height: 250px;
+        width: 95%;
+    }
+}
+
 .video {
     position: relative;
     display: flex;
@@ -81,9 +88,6 @@
     background-size: cover;
     transition: 1s;
 }
-
-
-
 
 .absolute{
     display: flex;

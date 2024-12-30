@@ -9,6 +9,13 @@
     margin-bottom: 200px;
 }
 
+@media (max-width: 768px) {
+    .diferenciais {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 .conteinerDiferenciais{
     position: relative;
     display: flex;
@@ -23,6 +30,12 @@
     background-color: var(--cor5);
     margin-bottom: 20px;
     transition: 1s;
+}
+
+@media (max-width: 768px) {
+    .conteinerDiferenciais {
+        width: 70%;
+    }
 }
 
 .titleDiferenciais{

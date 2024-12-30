@@ -10,6 +10,13 @@
     background-repeat: no-repeat;
 }
 
+@media (max-width: 768px) {
+    .animacaoEclipse {
+        height: 80vh; 
+        background-position: 42% 3%;
+    }
+}
+
 .textoIncial {
     position: absolute;
     z-index: 0;
@@ -26,6 +33,18 @@
     padding-top: 10px;
 }
 
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 40px; 
+    }
+}
+
 .subtitulo {
     font-size: 30px;
+}
+
+@media (max-width: 768px) {
+    .subtitulo {
+        font-size: 20px; 
+    }
 }

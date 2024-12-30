@@ -21,15 +21,25 @@
     background-position: center;
 }
 
-.h2Contato{
-    font-size: 30px;
+@media (max-width: 768px) {
+    .conteinerContato {
+        height: 250px;
+    }
 }
 
 .h2Contato{
     font-size: 30px;
+}
+
+@media (max-width: 768px) {
+    .h2Contato {
+        display: none;
+    }
 }
 
 .h3Contato{
+    position: relative;
+    top: 23px;
     font-size: 25px;
     cursor: pointer;
     transition: .4s;

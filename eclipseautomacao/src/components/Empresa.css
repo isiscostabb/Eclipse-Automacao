@@ -18,6 +18,12 @@
     overflow-x: hidden;
 }
 
+@media (max-width: 768px) {
+    .conteinerEmpresa {
+        height: 600px;
+    }
+}
+
 .deslizante {
     position: relative;
     display: flex;
@@ -33,10 +39,20 @@
     align-items: center;
 }
 
+@media (max-width: 768px) {
+    .slide {
+        display: flex;
+        flex-direction: column;
+        overflow-y: hidden;
+        width: 80vw;
+    }
+}
+
 .slide.quatro{
     background-image: url(/public/empresaSlide3.png);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .imgEmpresa{
@@ -46,6 +62,13 @@
     width: 30%;
 }
 
+@media (max-width: 768px) {
+    .imgEmpresa {
+        width: 60vw;
+        margin-bottom: 25px;
+    }
+}
+
 .pEmpresa {
     font-family: 'font0';
     color: var(--cor0);
@@ -53,6 +76,12 @@
     width: 50%;
     margin-left: 30px;
     text-shadow: 1px 1px 1px var(--cor4);
+}
+
+@media (max-width: 768px) {
+    .pEmpresa {
+        width: 80%;
+    }
 }
 
 .destaque {
@@ -66,6 +95,12 @@
     align-items: center;
     width: 15%;
     margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .botoesEmpresa {
+        width: 50%;
+    }
 }
 
 .botaoEmpresa {
