@@ -23,7 +23,7 @@
 
 @media (max-width: 768px) {
     .conteinerContato {
-        height: 250px;
+        height: 220px;
     }
 }
 
@@ -46,7 +46,8 @@
 @media (max-width: 768px) {
     .h3Contato {
         position: relative;
-        top: 23px;
+        top: 18px;
+        font-size: 20.5px;
     }
 }
 

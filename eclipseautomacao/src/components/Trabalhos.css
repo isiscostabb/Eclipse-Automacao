@@ -55,6 +55,7 @@
 
 @media (max-width: 768px) {
     .conteinerOpcoes {
+        margin-top: 60px;
         grid-template-columns: 1fr; 
     }
 }
@@ -73,9 +74,22 @@
     transition: 1s;
 }
 
+@media (max-width: 768px) {
+    .opcao {
+        width: 280px;
+        height: 280px;
+    }
+}
+
 .txtOpcao {
     color: var(--cor3);
     font-size: 40px;
+}
+
+@media (max-width: 768px) {
+    .txtOpcao {
+        font-size: 30px;
+    }
 }
 
 .imgOpcao {
@@ -87,6 +101,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     transition: 1s;
+}
+
+@media (max-width: 768px) {
+    .imgOpcao {
+        height: 200px;
+    }
 }
 
 .absolute{

@@ -9,7 +9,7 @@
 
 @media (max-width: 768px) {
     .mapa {
-        width: 350px;
+        width: 300px;
     }
 }
 
@@ -21,7 +21,7 @@
 @media (max-width: 768px) {
     .map {
         margin-bottom: 25px;
-        height: 350px;
-        width: 350px;
+        height: 270px;
+        width: 300px;
     }
 }

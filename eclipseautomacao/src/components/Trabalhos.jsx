@@ -97,7 +97,7 @@ const Trabalhos = () => {
                     </div>
                     {selectedOption && (
                         <>
-                            <h1>TRABALHOS {selectedOption.nome}</h1>
+                            <h1>. {selectedOption.nome}</h1>
                             <div className='imagensTrabalho'>
                                 {selectedOption.imagens.map((imgSrc, index) => (
                                     <img key={index} src={imgSrc} alt={`Imagem ${index + 1} de ${selectedOption.nome}`} className='ts'/>
