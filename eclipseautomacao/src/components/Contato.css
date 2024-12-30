@@ -38,11 +38,16 @@
 }
 
 .h3Contato{
-    position: relative;
-    top: 23px;
     font-size: 25px;
     cursor: pointer;
     transition: .4s;
+}
+
+@media (max-width: 768px) {
+    .h3Contato {
+        position: relative;
+        top: 23px;
+    }
 }
 
 .h3Contato:hover{
