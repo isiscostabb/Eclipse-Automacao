@@ -10,6 +10,36 @@
     background-repeat: no-repeat;
 }
 
+.lua {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .lua {
+        display: flex;
+        position: relative;
+        z-index: 0;
+        width: 400px;
+        align-self: flex-start;
+        transform: translate(0%, -70%);
+    }
+}
+
+.sol {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .sol {
+        display: flex;
+        position: absolute;
+        width: 900px;
+        align-self: flex-end;
+        transform: translate(0%, 60%);
+    }
+}
+
+
 @media (max-width: 768px) {
     .animacaoEclipse {
         height: 80vh; 

@@ -78,6 +78,8 @@ function Eclipse() {
 
   return (
     <div className='animacaoEclipse'>
+      <img className='lua' src="/lua.png" alt="" />
+      <img className='sol' src="/sol.png" alt="" />
       <div className='textoIncial'>
         <h1 className='titulo'>ECLIPSE AUTOMAÇÃO</h1>
         <h2 className='subtitulo'>SOLUÇÕES DE AUTOMAÇÃO INDUSTRIAL</h2>

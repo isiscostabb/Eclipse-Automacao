@@ -61,6 +61,6 @@ li {
 }
 
 li:hover {
-    color: var(--cor0);
+    color: var(--cor6);
     transition: .4s;
 }
