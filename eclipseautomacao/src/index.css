@@ -2,7 +2,14 @@
 * {
   padding: 0%;
   margin: 0%;
+
+  /*color-scheme: light dark;*/
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
 }
+
+
 
 :root {
   --cor1: #ffffff;; /* branco */
@@ -22,17 +29,6 @@
   font-family: 'font1';
   src: url(assets/Fontes/BDSupperBold.ttf);
 } 
-
-:root {
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
 a {
   font-weight: 500;
@@ -59,14 +55,17 @@ h1 {
 
 h2{
   font-family: 'font0';
+  color: var(--cor1);
 }
 
 h3{
   font-family: 'font0';
+  color: var(--cor1);
 }
 
 p{
   font-family: 'font0';
+  color: var(--cor1);
 }
 
 button {
@@ -77,17 +76,4 @@ button {
 button:focus,
 button:focus-visible {
   background-color: var(--cor5);
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }

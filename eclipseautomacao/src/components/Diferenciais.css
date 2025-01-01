@@ -42,6 +42,7 @@
     font-size: 20px;
     margin-top: 20px;
     opacity: 1;
+    color: var(--cor3);
 }
 
 .pDiferenciais{
@@ -50,6 +51,7 @@
     width: 90%;
     transition: opacity .5s ease, visibility .5s ease;
     opacity: 0;
+    color: var(--cor3);
 }
 
 .conteinerDiferenciais:hover .pDiferenciais{
@@ -64,8 +66,4 @@
     transition: opacity .5s ease, visibility .5s ease;
     opacity: 0;
     display: none;
-}
-
-.conteinerDiferenciais:hover{
-    background-color: var(--cor6);
 }
