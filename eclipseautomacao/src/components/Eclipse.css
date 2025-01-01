@@ -9,6 +9,7 @@
     height: 100vh;
     background-image: url("/sky.png");
     background-repeat: no-repeat;
+    overflow-x: hidden;
 }
 
 .lua {
