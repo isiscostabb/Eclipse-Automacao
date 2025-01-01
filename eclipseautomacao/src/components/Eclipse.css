@@ -19,7 +19,7 @@
 @media (max-width: 768px) {
     .lua {
         display: flex;
-        position: static;
+        position: relative;
         z-index: 0;
         width: 350px;
         align-self: flex-start;
