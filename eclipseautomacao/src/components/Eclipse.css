@@ -23,7 +23,7 @@
         z-index: 0;
         width: 350px;
         align-self: flex-start;
-        transform: translate(20%, 0%);
+        transform: translate(20%, 30%);
     }
 }
 
@@ -37,7 +37,7 @@
         position: relative;
         width: 900px;
         align-self: flex-end;
-        transform: translate(20%, 30%);
+        transform: translate(30%, 30%);
     }
 }
 
