@@ -30,9 +30,10 @@ function App() {
           scrollToTrabalhos={() => scrollToRef(trabalhosRef)}
           scrollToDiferenciais={() => scrollToRef(diferenciaisRef)}
           scrollToContato={() => scrollToRef(contatoRef)}
+          scrollToTop={() => scrollToRef(top)}
         />
 
-        <Eclipse />
+        <Eclipse ref={top}/>
 
         <section className='conteudo'>
           <h1 ref={empresaRef} className='h1Empresa'>EMPRESA</h1>

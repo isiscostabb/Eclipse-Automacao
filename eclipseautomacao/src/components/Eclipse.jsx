@@ -5,7 +5,12 @@ import React, { useRef, useState, useEffect, Suspense } from 'react';
 //import { OrbitControls, useGLTF } from '@react-three/drei';
 
 // Função para carregar o modelo 3D do Sol
-function Eclipse(/*{ position, setsunTargetPosition }*/) {
+function Eclipse( /*{ position, setsunTargetPosition }*/) {
+
+
+  const Top = React.forwardRef((props, top) => {
+  
+  })
   /*const { scene } = useGLTF('./public/sun_model.glb');
   const ref = useRef();
   const speed = 0.09; // Velocidade
@@ -80,7 +85,7 @@ function Eclipse() {
     <div className='animacaoEclipse'>
       {/*<img className='lua' src="/lua.png" alt="" />
       <img className='sol' src="/sol.png" alt="" /> */}
-      <div className='textoIncial'>
+      <div className='textoIncial' ref={top}>
         <h1 className='titulo'>ECLIPSE AUTOMAÇÃO</h1>
         <h2 className='subtitulo'>SOLUÇÕES DE AUTOMAÇÃO INDUSTRIAL</h2>
       </div>

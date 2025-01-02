@@ -7,6 +7,7 @@ function Header({
   scrollToTrabalhos, 
   scrollToDiferenciais,
   scrollToContato,
+  scrollToTop,
 }) {
 
   const [scrolled, setScrolled] = useState(false); 
@@ -27,7 +28,7 @@ function Header({
   return (
     <>
       <header className={scrolled ? 'header scroll' : 'header'}> {/* Aplica a classe 'scroll' */}
-        <img src="/logoeclipse.png" alt="logo" className="logo"/> 
+        <img onClick={scrollToTop} src="/logoeclipse.png" alt="logo" className="logo"/> 
 
         <ul>
           <li onClick={scrollToEmpresa}>EMPRESA</li> {/* Chama a função de rolagem */}
