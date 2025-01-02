@@ -5,7 +5,6 @@
     flex-direction: column;
     align-items: center;
     width: 100vw;
-    margin-top: 20px;
 }
 
 .conteinerTrabalhos {
@@ -17,30 +16,6 @@
     border-radius: 20px;
     justify-content: center;
     align-items: center;
-}
-
-.conteinerVideo {
-    position: relative;
-    display: flex;
-    width: 80%;
-    height: 615px;
-    border-radius: 20px;
-    justify-content: center;
-    align-content: center;
-}
-
-@media (max-width: 768px) {
-    .conteinerVideo {
-        height: 250px;
-        width: 95%;
-    }
-}
-
-.video {
-    position: relative;
-    display: flex;
-    border-radius: 20px;
-    width: 100%;
 }
 
 .conteinerOpcoes {
@@ -82,12 +57,14 @@
 }
 
 .txtOpcao {
+    text-align: center;
     color: var(--cor3);
     font-size: 40px;
 }
 
 @media (max-width: 768px) {
     .txtOpcao {
+        text-align: center;
         font-size: 30px;
     }
 }
@@ -96,7 +73,7 @@
     position: relative;
     display: flex;
     width: 90%;
-    height: 320px;
+    height: 260px;
     border-radius: 10px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -105,7 +82,7 @@
 
 @media (max-width: 768px) {
     .imgOpcao {
-        height: 200px;
+        height: 180px;
     }
 }
 

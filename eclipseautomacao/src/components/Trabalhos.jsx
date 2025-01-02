@@ -6,12 +6,12 @@ import './Trabalhos.css';
 const opcoesData = [
     {
         id: 'um',
-        nome: 'Grupo1',
+        nome: 'Painéis de automação',
         imgDefault: '/public/Grupo1.png',
         imgHover: '/public/Grupo1-2.png',
         imagens: ['']
     },
-    {
+    /*{
         id: 'dois',
         nome: 'Grupo2',
         imgDefault: '/public/Grupo2.png',
@@ -31,21 +31,7 @@ const opcoesData = [
         imgDefault: '/public/Grupo4.png',
         imgHover: '/public/Grupo4-2.png',
         imagens: ['']
-    },
-    {
-        id: 'cinco',
-        nome: 'Grupo5',
-        imgDefault: '/public/Grupo5.png',
-        imgHover: '/public/Grupo5-2.png',
-        imagens: ['']
-    },
-    {
-        id: 'seis',
-        nome: 'Grupo6',
-        imgDefault: '/public/Grupo6.png',
-        imgHover: '/public/Grupo6-2.png',
-        imagens: ['']
-    }
+    }*/
 ];
 
 const Trabalhos = () => {
@@ -68,9 +54,6 @@ const Trabalhos = () => {
     return (
         <div className='trabalhos'>
             <div className='conteinerTrabalhos'>
-                <div className='conteinerVideo'>
-                    <video src="/video trailer.mp4" autoPlay loop muted preload='auto' className='video'></video>
-                </div>
 
                 <div className='conteinerOpcoes'>
                     {opcoesData.map(opcao => (
@@ -97,7 +80,7 @@ const Trabalhos = () => {
                     </div>
                     {selectedOption && (
                         <>
-                            <h1>. {selectedOption.nome}</h1>
+                            <h1>{selectedOption.nome}</h1>
                             <div className='imagensTrabalho'>
                                 {selectedOption.imagens.map((imgSrc, index) => (
                                     <img key={index} src={imgSrc} alt={`Imagem ${index + 1} de ${selectedOption.nome}`} className='ts'/>
