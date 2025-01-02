@@ -7,13 +7,19 @@
     align-items: center;    
     width: 100%;
     height: 100vh;
-    background-image: url("/sky.png");
+    background-image: url("https://i.pinimg.com/736x/82/2e/c3/822ec320aa831aafd98418b1c12b935e.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
     overflow-x: hidden;
 }
 
 .lua {
-    display: none;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    width: 1000px;
+    align-self: flex-start;
+    transform: translate(35%, 130%);
 }
 
 @media (max-width: 768px) {
@@ -28,7 +34,12 @@
 }
 
 .sol {
-    display: none;
+    z-index: 0;
+    display: flex;
+    position: relative;
+    width: 1600px;
+    align-self: flex-end;
+    transform: translate(-2%, 0%);
 }
 
 @media (max-width: 768px) {

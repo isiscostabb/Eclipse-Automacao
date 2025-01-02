@@ -50,10 +50,10 @@
 }
 
 .slide.quatro{
-    background-image: url(/public/empresaSlide4.png);
+    background-image: url(https://i.pinimg.com/736x/a5/a2/e7/a5a2e75253fe53ac5f381743c405e585.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: flex-end;
 }
 
 @media (max-width: 768px) {

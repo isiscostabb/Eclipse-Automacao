@@ -7,9 +7,9 @@ const opcoesData = [
     {
         id: 'um',
         nome: 'Painéis de automação',
-        imgDefault: '/public/Grupo1.png',
-        imgHover: '/public/Grupo1-2.png',
-        imagens: ['']
+        imgDefault: 'https://i.pinimg.com/736x/8b/68/a9/8b68a99a9ee1905a12b887a592cf92e4.jpg',
+        imgHover: 'https://i.pinimg.com/736x/a2/e0/f2/a2e0f22a9d61d49319f75897605c8048.jpg',
+        imagens: ['https://i.pinimg.com/736x/8b/68/a9/8b68a99a9ee1905a12b887a592cf92e4.jpg']
     },
     /*{
         id: 'dois',
