@@ -124,6 +124,7 @@
         height: 30px;
         border-radius: 10px;
         right: 30px;
+        top: 40px;
     }
 }
 
@@ -179,10 +180,10 @@
 @media (max-width: 768px) {
     .h1Absolute {
         margin-top: 50px;
-        margin-bottom: 35px;
+        margin-bottom: 25px;
         text-align: left;
         margin-left: 10px;
-        font-size: 35px;
+        font-size: 30px;
         width: 80vw;
     }
 }
