@@ -67,7 +67,7 @@ const Trabalhos = () => {
                 {/* DENTRO */}    
                 <div className={`absolute ${isAbsoluteVisible ? '' : 'fechado'}`}>
                     <div className='fechar' onClick={handleCloseClick}>
-                        <IoCloseSharp size={50} color="#050428"/>
+                        <IoCloseSharp size={50} color="#050428" className="iconAbsolute"/>
                     </div>
 
                     {selectedOption && (

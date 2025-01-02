@@ -120,9 +120,20 @@
 
 @media (max-width: 768px) {
     .fechar {
-        top: 40px;
+        width: 30px;
+        height: 30px;
+        border-radius: 10px;
+        right: 30px;
     }
 }
+
+@media (max-width: 768px) {
+    .iconAbsolute {
+        width: 30px;
+        align-self: center;
+    }
+}
+
 
 .fechado{
     display: none;
