@@ -120,21 +120,20 @@
 
 @media (max-width: 768px) {
     .fechar {
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: 35px;
         border-radius: 10px;
-        right: 30px;
-        top: 40px;
+        right: 40px;
+        top: 55px;
     }
 }
 
 @media (max-width: 768px) {
     .iconAbsolute {
-        width: 30px;
+        width: 35px;
         align-self: center;
     }
 }
-
 
 .fechado{
     display: none;
@@ -179,7 +178,7 @@
 
 @media (max-width: 768px) {
     .h1Absolute {
-        margin-top: 50px;
+        margin-top: 55px;
         margin-bottom: 25px;
         text-align: left;
         margin-left: 10px;
