@@ -154,8 +154,18 @@
 }
 
 .h1Absolute{
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 30px;
-    text-align: left;
-    margin-left: 10%;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .h1Absolute {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        text-align: left;
+        margin-left: 30px;
+        font-size: 40px;
+        width: 80vw;
+    }
 }
