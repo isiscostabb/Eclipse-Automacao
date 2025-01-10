@@ -151,9 +151,25 @@
 @media (max-width: 768px) {
     .imagensTrabalho {
         width: 85%;
-        height: 70%;
+        height: 70%;       
     }
 }
+
+/* LARG > ALT */
+
+.imagensTrabalho2{
+    margin-top: 100px;
+}
+
+@media (max-width: 768px) {
+    .imagensTrabalho2{
+        width: 85%;
+        height: 30%;  
+        margin-top: 40%;
+    }
+}
+
+/* */
 
 .fotos{
     position: relative;

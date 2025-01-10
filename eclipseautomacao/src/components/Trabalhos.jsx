@@ -56,6 +56,38 @@ const opcoesData = [
                 'https://i.pinimg.com/736x/87/da/8e/87da8edf8ef5be92f93cfa32c6c29b15.jpg',
                 'https://i.pinimg.com/736x/0f/39/d5/0f39d5c0dbd4ef22a8f4dccda0833b01.jpg'
         ]
+    },
+
+    {
+        id: 'um',
+        nome: 'Máquinas Novas',
+        imgDefault: 'https://i.pinimg.com/736x/de/27/44/de2744d9053f0f92c643441634dbe434.jpg',
+        imgHover: 'https://i.pinimg.com/736x/11/aa/85/11aa85cef67fc4c099ac45c84a5f5196.jpg',
+        imagens: ['https://i.pinimg.com/736x/23/80/76/238076f05f3b1d2cdd95e611e907d95c.jpg',
+                'https://i.pinimg.com/736x/a5/59/11/a55911da064809c9ab13fd0471c25ba5.jpg',
+                'https://i.pinimg.com/736x/97/2f/db/972fdbc51e47a7bccddf662094762e49.jpg',
+                //v1 v3
+                'https://i.pinimg.com/736x/26/5e/9d/265e9dd4c9f89c60c88112494c4393a2.jpg',
+                'https://i.pinimg.com/736x/cd/66/d4/cd66d480b1d12ec0b2e3122960ec31a0.jpg',
+                'https://i.pinimg.com/736x/97/24/87/972487f5af6ae221b70f9fcf46e05fc8.jpg',
+                //v5
+                'https://i.pinimg.com/736x/71/c5/8c/71c58c14b9b0d458bec785ddaa3abd19.jpg',
+                //v7
+                'https://i.pinimg.com/736x/4d/e0/71/4de071806d56fe6e6d98ed1792f063e4.jpg',
+                'https://i.pinimg.com/736x/f8/f2/14/f8f214463af7ed273d3b57f38d195fd2.jpg',
+                //v9
+                'https://i.pinimg.com/736x/d4/a5/9a/d4a59ae8c74bff4c49c3d3f088776a1a.jpg',
+                'https://i.pinimg.com/736x/77/7d/65/777d6568b18de337334347093ffbe9c3.jpg',
+                'https://i.pinimg.com/736x/96/89/9e/96899eea704daa96f0a9d9344f84ee0a.jpg',
+                //v11
+                'https://i.pinimg.com/736x/f2/4c/d5/f24cd53387b957f04a330e63b6382a6f.jpg',
+                'https://i.pinimg.com/736x/03/94/3d/03943d617900deef2ac08ff16a12be23.jpg',
+                'https://i.pinimg.com/736x/64/4b/af/644bafd4b02f21effdc18d10fdd5fcef.jpg',
+                //
+                'https://i.pinimg.com/736x/2d/40/b2/2d40b2a3bedf935068f03555de34aae4.jpg',
+                'https://i.pinimg.com/736x/99/a7/38/99a73813c4f6dc801d2fc77da093b958.jpg',
+                'https://i.pinimg.com/736x/38/48/97/3848973051c0fff536655a3c280c8f62.jpg'
+        ]
     }
 ];
 
@@ -86,6 +118,13 @@ const Trabalhos = () => {
     const handleCloseClick = () => {
         setIsAbsoluteVisible(false);
         setSelectedOption(null);
+    };
+
+    const [isWide, setIsWide] = useState(false);
+
+    const handleImageLoad = (event) => {
+        const { naturalWidth, naturalHeight } = event.target;
+        setIsWide(naturalWidth > naturalHeight);
     };
 
     return (
@@ -121,13 +160,15 @@ const Trabalhos = () => {
                         <>
                             <h1 className="h1Absolute">{selectedOption.nome}</h1>
                             
-                            <div className='imagensTrabalho'>
-                                <img 
-                                    src={selectedOption.imagens[currentImageIndex]} 
-                                    alt={`Imagem ${currentImageIndex + 1} de ${selectedOption.nome}`} 
+                            <div className={isWide ? 'imagensTrabalho2' : 'imagensTrabalho'}>
+                                <img
+                                    src={selectedOption.imagens[currentImageIndex]}
+                                    alt={`Imagem ${currentImageIndex + 1} de ${selectedOption.nome}`}
                                     className='fotos'
+                                    onLoad={handleImageLoad}
                                 />
                             </div>
+
                         </>
                     )}
                 </div>
