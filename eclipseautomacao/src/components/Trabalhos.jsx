@@ -105,8 +105,9 @@ const Trabalhos = () => {
             if (selectedOption.imagens.includes('vimeo.com')) {
                 const videoDuration = selectedOption.imagens[currentImageIndex].duration; // Obtém a duração do vídeo (em segundos)
                 tempo = videoDuration * 1000
+                tempo = null
             } else {
-                tempo = 3000
+                tempo = 3000 //3000
             }
 
             const intervalId = setInterval(() => {
