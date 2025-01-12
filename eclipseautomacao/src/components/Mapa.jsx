@@ -25,7 +25,7 @@ const defaultIcon = new L.Icon({
 function Mapa() {
 
     // Coordenadas aproximadas do endereço
-    const position = [-28.5161, -49.3233]
+    const position = [-28.523971, -49.327133]
   
     return (
       <>
