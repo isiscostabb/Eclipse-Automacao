@@ -96,20 +96,31 @@ const Trabalhos = () => {
     const [isAbsoluteVisible, setIsAbsoluteVisible] = useState(false);
     const [selectedOption, setSelectedOption] = useState(null);
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    let tempo = 0
 
-    // Alterna a imagem a cada 5 segundos
+    // Alterna a imagem a cada 3 segundos
     useEffect(() => {
         if (selectedOption) {
+
+            if (selectedOption.imagens.includes('vimeo.com')) {
+                const videoDuration = selectedOption.imagens[currentImageIndex].duration; // Obtém a duração do vídeo (em segundos)
+                tempo = videoDuration * 1000
+            } else {
+                tempo = 3000
+            }
 
             const intervalId = setInterval(() => {
                 setCurrentImageIndex((prevIndex) => 
                     (prevIndex + 1) % selectedOption.imagens.length
                 );
-            }, 3000);
+            }, tempo);
 
             return () => clearInterval(intervalId); // Limpa o intervalo ao desmontar
         }
     }, [selectedOption]);
+
+
+    
 
     const handleOpcaoClick = (opcao) => {
         setSelectedOption(opcao);
@@ -166,7 +177,7 @@ const Trabalhos = () => {
                                 {
                                     // Verificando se o link é de vídeo
                                     selectedOption.imagens[currentImageIndex].includes('vimeo.com') ? (
-                                        <video autoPlay muted ended
+                                        <video
                                             src={selectedOption.imagens[currentImageIndex]}
                                             alt={`Imagem ${currentImageIndex + 1} de ${selectedOption.nome}`}
                                             className='fotos'
