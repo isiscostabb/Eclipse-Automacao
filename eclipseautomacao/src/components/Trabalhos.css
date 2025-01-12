@@ -151,7 +151,7 @@
 
 @media (max-width: 768px) {
     .imagensTrabalho {
-        width: 85%;
+        width: 80%;
         height: 70%;       
     }
 }
@@ -159,7 +159,8 @@
 /* LARG > ALT */
 
 .imagensTrabalho2{
-    margin-top: 100px;
+    height: 80%;
+    overflow-x: hidden;
 }
 
 @media (max-width: 768px) {

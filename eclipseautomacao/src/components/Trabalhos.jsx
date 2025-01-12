@@ -1,5 +1,7 @@
+
 import { IoCloseSharp } from "react-icons/io5";
 import React, { useState, useEffect } from 'react';
+
 import './Trabalhos.css';
 
 const opcoesData = [
@@ -59,32 +61,32 @@ const opcoesData = [
     },
 
     {
-        id: 'um',
+        id: 'dois',
         nome: 'Máquinas Novas',
         imgDefault: 'https://i.pinimg.com/736x/de/27/44/de2744d9053f0f92c643441634dbe434.jpg',
         imgHover: 'https://i.pinimg.com/736x/11/aa/85/11aa85cef67fc4c099ac45c84a5f5196.jpg',
         imagens: ['https://i.pinimg.com/736x/23/80/76/238076f05f3b1d2cdd95e611e907d95c.jpg',
                 'https://i.pinimg.com/736x/a5/59/11/a55911da064809c9ab13fd0471c25ba5.jpg',
                 'https://i.pinimg.com/736x/97/2f/db/972fdbc51e47a7bccddf662094762e49.jpg',
-                'https://vimeo.com/1046059319', //v1
-                'https://vimeo.com/1046060601', //v3
+                'public/Novos Projetos V1.mp4', //v1
+                'public/Novos Projetos V3.mp4', //v3
                 'https://i.pinimg.com/736x/26/5e/9d/265e9dd4c9f89c60c88112494c4393a2.jpg',
                 'https://i.pinimg.com/736x/cd/66/d4/cd66d480b1d12ec0b2e3122960ec31a0.jpg',
                 'https://i.pinimg.com/736x/97/24/87/972487f5af6ae221b70f9fcf46e05fc8.jpg',
-                'https://vimeo.com/1046061290', //v5
+                'public/Novos Projetos V5.mp4', //v5
                 'https://i.pinimg.com/736x/71/c5/8c/71c58c14b9b0d458bec785ddaa3abd19.jpg',
-                'https://vimeo.com/1046062095', //v7
+                'public/Novos Projetos V7.mp4', //v7
                 'https://i.pinimg.com/736x/4d/e0/71/4de071806d56fe6e6d98ed1792f063e4.jpg',
                 'https://i.pinimg.com/736x/f8/f2/14/f8f214463af7ed273d3b57f38d195fd2.jpg',
-                'https://vimeo.com/1046062705', //v9
+                'public/Novos Projetos V9.mp4', //v9
                 'https://i.pinimg.com/736x/d4/a5/9a/d4a59ae8c74bff4c49c3d3f088776a1a.jpg',
                 'https://i.pinimg.com/736x/77/7d/65/777d6568b18de337334347093ffbe9c3.jpg',
                 'https://i.pinimg.com/736x/96/89/9e/96899eea704daa96f0a9d9344f84ee0a.jpg',
-                'https://vimeo.com/1046064252', //v11
+                'public/Novos Projetos V11.mp4', //v11
                 'https://i.pinimg.com/736x/f2/4c/d5/f24cd53387b957f04a330e63b6382a6f.jpg',
                 'https://i.pinimg.com/736x/03/94/3d/03943d617900deef2ac08ff16a12be23.jpg',
                 'https://i.pinimg.com/736x/64/4b/af/644bafd4b02f21effdc18d10fdd5fcef.jpg',
-                'https://vimeo.com/1046063353', //v13
+                'public/Novos Projetos V13.mp4', //v13
                 'https://i.pinimg.com/736x/2d/40/b2/2d40b2a3bedf935068f03555de34aae4.jpg',
                 'https://i.pinimg.com/736x/99/a7/38/99a73813c4f6dc801d2fc77da093b958.jpg',
                 'https://i.pinimg.com/736x/38/48/97/3848973051c0fff536655a3c280c8f62.jpg'
@@ -93,35 +95,40 @@ const opcoesData = [
 ];
 
 const Trabalhos = () => {
+
     const [isAbsoluteVisible, setIsAbsoluteVisible] = useState(false);
     const [selectedOption, setSelectedOption] = useState(null);
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
-    let tempo = 0
+    let tempo = 3000;
+    let indx = 0;
 
     // Alterna a imagem a cada 3 segundos
     useEffect(() => {
         if (selectedOption) {
 
-            if (selectedOption.imagens.includes('vimeo.com')) {
-                const videoDuration = selectedOption.imagens[currentImageIndex].duration; // Obtém a duração do vídeo (em segundos)
-                tempo = videoDuration * 1000
-                tempo = null
-            } else {
-                tempo = 3000 //3000
-            }
-
             const intervalId = setInterval(() => {
+
                 setCurrentImageIndex((prevIndex) => 
                     (prevIndex + 1) % selectedOption.imagens.length
                 );
+
+                if (selectedOption.imagens[indx].includes('Novos Projetos')) {
+                    //const videoDuration = selectedOption.imagens[indx].duration; // duração(em segundos)
+                    //tempo = videoDuration * 1000
+                    tempo = 1000000;
+                } else if (selectedOption.imagens[indx].includes('pinimg')) {
+                    tempo = 3000;
+                }
+                
+                indx += 1;
+
             }, tempo);
+
+
 
             return () => clearInterval(intervalId); // Limpa o intervalo ao desmontar
         }
     }, [selectedOption]);
-
-
-    
 
     const handleOpcaoClick = (opcao) => {
         setSelectedOption(opcao);
@@ -140,6 +147,7 @@ const Trabalhos = () => {
         const { naturalWidth, naturalHeight } = event.target;
         setIsWide(naturalWidth > naturalHeight);
     };
+    
 
     return (
         <div className='trabalhos'>
@@ -177,13 +185,13 @@ const Trabalhos = () => {
                             <div className={isWide ? 'imagensTrabalho2' : 'imagensTrabalho'}>
                                 {
                                     // Verificando se o link é de vídeo
-                                    selectedOption.imagens[currentImageIndex].includes('vimeo.com') ? (
+                                    selectedOption.imagens[currentImageIndex].includes('Novos Projetos') ? (
                                         <video
                                             src={selectedOption.imagens[currentImageIndex]}
                                             alt={`Imagem ${currentImageIndex + 1} de ${selectedOption.nome}`}
                                             className='fotos'
                                             onLoad={handleImageLoad}
-                                            controls
+                                            autoPlay
                                         />
                                     ) : (
                                         <img

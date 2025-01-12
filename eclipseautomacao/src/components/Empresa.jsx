@@ -21,7 +21,7 @@ function Empresa() {
                         <div className='slide'>
                             <img src="https://i.pinimg.com/736x/ca/aa/97/caaa97226985c087c0b2bd9df79e2b18.jpg" alt="mapa" className='imgEmpresa' />
                             <p className='pEmpresa'>
-                                Fundada em maio de 2011, traz o know-how de trabalhos realizados desde 1988 na área de eletrônica e automação industrial, elétrica e automação industrial,
+                                Fundada em maio de 2011, traz o know-how de trabalhos realizados desde 1988 na área de elétrica, eletrônica e automação industrial,
                                 atendendo empresas na <span className='destaque'>Argentina, Bolívia, Itália</span> e estados como o <span className='destaque'>RS, SC, PR, SP, ES, MG, PE, PA, BA</span> entre outros.
                             </p>
                         </div>
