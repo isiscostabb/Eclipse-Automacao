@@ -14,15 +14,6 @@
     overflow-y: hidden;
 }
 
-.lua {
-    display: flex;
-    position: relative;
-    z-index: 1;
-    width: 1000px;
-    align-self: flex-start;
-    transform: translate(35%, 130%);
-}
-
 @media (max-width: 768px) {
     .lua {
         display: flex;
@@ -55,14 +46,13 @@
         display: flex;
         position: relative;
         width: 1600px;
-        align-self: flex-end;
-        transform: translate(40%, 40%);
+        transform: translate(37%, 40%);
     }
 }
 
 @media (max-width: 768px) {
     .sol:hover {
-        transform: translate(40%, -60%);
+        transform: translate(40%, -40%);
         transition: cubic-bezier(0.86, 0, 0.07, 1) 1s;
     }
 }
