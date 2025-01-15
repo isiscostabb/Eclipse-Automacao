@@ -1,17 +1,17 @@
 
 import './Mapa.css'
 
-// Mapa.js
+// Mapa
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 
-// Importar os ícones no formato ESM
+// ícones
 import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png';
 import markerIcon from 'leaflet/dist/images/marker-icon.png';
 import markerShadow from 'leaflet/dist/images/marker-shadow.png';
 
-// Definir os ícones manualmente
+// Definir os ícones
 const defaultIcon = new L.Icon({
   iconRetinaUrl: markerIcon2x,
   iconUrl: markerIcon,
@@ -24,12 +24,11 @@ const defaultIcon = new L.Icon({
 
 function Mapa() {
 
-    // Coordenadas aproximadas do endereço
+    // Coordenadas
     const position = [-28.523971, -49.327133]
   
     return (
       <>
-        {/* Mapa com a localização */}
         <div className='mapa'>
           <MapContainer center={position} zoom={15} className='map'>
             <TileLayer

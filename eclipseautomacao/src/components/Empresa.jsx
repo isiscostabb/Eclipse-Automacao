@@ -1,7 +1,9 @@
 
-import './Empresa.css';
-import Mapa from './Mapa';
 import { useState } from 'react';
+
+import Mapa from './Mapa';
+
+import './Empresa.css';
 
 function Empresa() {
 

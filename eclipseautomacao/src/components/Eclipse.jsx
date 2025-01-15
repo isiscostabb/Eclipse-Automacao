@@ -1,6 +1,7 @@
 
-import './Eclipse.css';
 import React from 'react';
+
+import './Eclipse.css';
 
 function Eclipse() {
 

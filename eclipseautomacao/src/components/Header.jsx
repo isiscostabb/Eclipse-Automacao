@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+
 import './Header.css';
 
 function Header({ 
@@ -23,6 +24,7 @@ function Header({
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
+    
   }, []); 
 
   return (
