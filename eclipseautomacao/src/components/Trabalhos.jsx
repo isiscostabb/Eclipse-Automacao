@@ -66,14 +66,7 @@ const opcoesData = [
         imgDefault: 'https://i.pinimg.com/736x/de/27/44/de2744d9053f0f92c643441634dbe434.jpg',
         imgHover: 'https://i.pinimg.com/736x/11/aa/85/11aa85cef67fc4c099ac45c84a5f5196.jpg',
         imagens: ['public/V1.mp4',
-                'public/V1.mp4',
-                'public/V2.mp4',
-                'public/V3.mp4',
-                'public/V4.mp4',
-                'public/V5.mp4',
-                'public/V6.mp4',
-                'public/V7.mp4',
-                'public/V8.mp4'
+
         ]
     }
 ];
@@ -190,14 +183,9 @@ const Trabalhos = () => {
 
                     {selectedOption && (
                         <>
-                        
-                            {/* TITULO */}    
-                            {
-                            selectedOption.imagens[currentImageIndex].includes('mp4') ? (
-                                <h1 className="h1Absolute">{selectedOption.nome + ' - ' + (currentImageIndex)}</h1> //COM NUMERAÇÃO
-                            ) : (
-                                <h1 className="h1Absolute">{selectedOption.nome}</h1>) //SEM NUMERAÇÃO
-                            }
+  
+                        <h1 className="h1Absolute">{selectedOption.nome}</h1>
+                     
                                 
                             {/* MÍDIA */}    
                             <div className={isWide ? 'imagensTrabalho2' : 'imagensTrabalho'}>
