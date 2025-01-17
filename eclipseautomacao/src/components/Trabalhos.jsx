@@ -65,7 +65,7 @@ const opcoesData = [
         nome: 'Máquinas Novas',
         imgDefault: 'https://i.pinimg.com/736x/de/27/44/de2744d9053f0f92c643441634dbe434.jpg',
         imgHover: 'https://i.pinimg.com/736x/11/aa/85/11aa85cef67fc4c099ac45c84a5f5196.jpg',
-        imagens: ['public/V1.mp4',
+        imagens: ['https://videos.pexels.com/video-files/30284964/12981884_1920_1080_30fps.mp4',
 
         ]
     }
