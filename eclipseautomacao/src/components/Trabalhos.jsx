@@ -65,9 +65,15 @@ const opcoesData = [
         nome: 'Máquinas Novas',
         imgDefault: 'https://i.pinimg.com/736x/de/27/44/de2744d9053f0f92c643441634dbe434.jpg',
         imgHover: 'https://i.pinimg.com/736x/11/aa/85/11aa85cef67fc4c099ac45c84a5f5196.jpg',
-        imagens: ['https://videos.pexels.com/video-files/30284964/12981884_1920_1080_30fps.mp4',
-                'https://videos.pexels.com/video-files/30284964/12981884_1920_1080_30fps.mp4',
-                'https://videos.pexels.com/video-files/30285013/12981915_1920_1080_30fps.mp4'
+        imagens: ['https://videos.pexels.com/video-files/30284964/12981884_1920_1080_30fps.mp4', //v1
+                'https://videos.pexels.com/video-files/30284964/12981884_1920_1080_30fps.mp4', //v1
+                'https://videos.pexels.com/video-files/30285013/12981915_1920_1080_30fps.mp4', //v2
+                'https://videos.pexels.com/video-files/30285057/12981925_1440_1978_25fps.mp4', //v3
+                //4
+                'https://videos.pexels.com/video-files/30285061/12981928_540_820_25fps.mp4', //v5
+                'https://videos.pexels.com/video-files/30285067/12981943_1440_2144_25fps.mp4', //v6
+                'https://videos.pexels.com/video-files/30285072/12981937_1440_1800_25fps.mp4', //v7
+                'https://videos.pexels.com/video-files/30285073/12981949_1440_2560_25fps.mp4' //v8
 
         ]
     }
