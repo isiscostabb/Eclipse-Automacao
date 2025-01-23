@@ -210,7 +210,7 @@ const Trabalhos = () => {
                                             className='fotos'
                                             onLoad={handleImageLoad}
                                             onEnded={handleVideoEnd} //PASSAR P/ PRÓX AUT 
-                                            autoPlay
+                                            autoPlay muted
                                         />
                                     ) : (
                                         //IMAGEM
