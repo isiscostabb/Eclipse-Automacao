@@ -65,9 +65,20 @@ const opcoesData = [
         nome: 'Máquinas Novas',
         imgDefault: 'https://i.pinimg.com/736x/de/27/44/de2744d9053f0f92c643441634dbe434.jpg',
         imgHover: 'https://i.pinimg.com/736x/11/aa/85/11aa85cef67fc4c099ac45c84a5f5196.jpg',
-        imagens: ['https://videos.pexels.com/video-files/30285013/12981915_1920_1080_30fps.mp4',
-                'https://videos.pexels.com/video-files/30285013/12981915_1920_1080_30fps.mp4',
-  
+        imagens: ['/mid-tb/V-FOTOS-1.mp4',
+                  '/mid-tb/V-FOTOS-1.mp4',
+                  '/mid-tb/V-V-1.0.mp4',
+                  '/mid-tb/V-V-1.1.mp4',
+                  '/mid-tb/V-FOTOS-2.mp4',
+                  '/mid-tb/V-V-2.0.mp4',
+                  '/mid-tb/ALL-3.mp4',
+                  '/mid-tb/V-FOTOS-4.mp4',
+                  '/mid-tb/V-V-4.0.mp4',
+                  '/mid-tb/V-FOTOS-5.mp4',
+                  '/mid-tb/V-V-5.0.mp4',
+                  '/mid-tb/V-FOTOS-6.mp4',
+                  '/mid-tb/V-FOTOS-7.mp4',
+                  '/mid-tb/V-V-7.0.mp4',
         ]
     }
 ];
