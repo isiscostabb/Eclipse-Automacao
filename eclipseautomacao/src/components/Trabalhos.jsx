@@ -79,6 +79,23 @@ const opcoesData = [
                   '/mid-tb/V-F-6.mp4',
                   '/mid-tb/V-F-7.mp4',
                   '/mid-tb/V-V-7.mp4',
+                  //PT2
+                  '/mid-tb/2V-V-1.mp4',
+                  '/mid-tb/2V-V-2.mp4',
+                  '/mid-tb/2V-V-3.mp4',
+                  '/mid-tb/2V-V-4.mp4',
+                  '/mid-tb/2V-V-5.mp4',
+                  '/mid-tb/2V-V-6.mp4',
+                  '/mid-tb/2V-V-7.mp4',
+                  '/mid-tb/2V-V-8.mp4',
+                  '/mid-tb/2V-V-9.mp4',
+                  '/mid-tb/2V-F-9.mp4',
+                  '/mid-tb/2V-V-10.mp4',
+                  '/mid-tb/2V-F-10.mp4',
+                  '/mid-tb/2V-V-11.mp4',
+                  '/mid-tb/2V-V-12.mp4',
+                  '/mid-tb/2V-V-13.mp4',
+                  '/mid-tb/2V-V-14.mp4',
         ]
     }
 ];
